@@ -1,3 +1,4 @@
-SELECT COUNT(*)
+SELECT DISTINCT category_id, price
 FROM hw_rdb03.products
-WHERE price >= 20 AND price <= 100;
+ORDER BY price DESC
+LIMIT 10;
